@@ -22,5 +22,3 @@ class Equal:
         t = locate('sympy.sympify')
         return solve(Eq(t(left), t(right)), var)
 
-
-print(Equal.equal('ln(x)=0'))
