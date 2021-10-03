@@ -1,5 +1,6 @@
 from equals import Equal
 from matrix import Matrix
+from integral import Integral
 
 
 class TestEqual:
@@ -61,3 +62,24 @@ class TestMatrix:
 
     def test_invert_matrix(self):
         assert Matrix.get_invert_matrix([[1, 2], [3, 4]]) == [[-2, 1], [1.5, -0.5]]
+
+
+class TestIntegral:
+    def test_rational(self):
+        assert Integral.integral(0, 1, 'x+1') == 1.5
+
+    def test_exponential(self):
+        assert Integral.integral(0, 1, 'exp(x)') == 1.71828
+
+    def test_sinus(self):
+        assert Integral.integral(0, 1, 'sin(x)') == 0.4597
+
+    def test_cosine(self):
+        assert Integral.integral(0, 1, 'cos(x)') == 0.84147
+
+    def test_tangent(self):
+        assert Integral.integral(0, 1, 'tan(x)') == 0.61563
+
+    def test_combination(self):
+        assert Integral.integral(0, 1, 'x+1+exp(x)+sin(x)') == 3.67798
+
