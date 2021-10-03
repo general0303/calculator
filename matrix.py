@@ -28,6 +28,3 @@ class Matrix:
     def get_invert_matrix(a):
         print(linalg.inv(matrix(a)))
         return round(linalg.inv(matrix(a)), 10).tolist()
-
-
-print(Matrix.get_matrix_determinant([[1, 2], [3, 4]]))

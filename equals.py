@@ -18,7 +18,7 @@ class Equal:
         return solution
 
     @staticmethod
-    def check_result(left, right, var):
+    def check_result(left, right, variable):
         t = locate('sympy.sympify')
-        return solve(Eq(t(left), t(right)), var)
+        return solve(Eq(t(left), t(right)), variable)
 
