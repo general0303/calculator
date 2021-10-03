@@ -78,7 +78,7 @@ class TestIntegral:
         assert Integral.integral(0, 1, 'cos(x)') == 0.84147
 
     def test_tangent(self):
-        assert Integral.integral(0, 1, 'tan(x)') == 0.61563
+        assert Integral.integral(0, 1, 'tan(x)') == 0.61569
 
     def test_combination(self):
         assert Integral.integral(0, 1, 'x+1+exp(x)+sin(x)') == 3.67798
