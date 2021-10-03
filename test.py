@@ -57,7 +57,7 @@ class TestMatrix:
         assert Matrix.transposition([[1, 2], [3, 4]]) == [[1, 3], [2, 4]]
 
     def test_determinant(self):
-        assert Matrix.get_matrix_determinant([[1, 2], [3, 4]]) == -2
+        assert Matrix.get_matrix_determinant([[1, 2], [3, 4]]) == -2.0
 
     def test_invert_matrix(self):
-        assert Matrix.get_invert_matrix([[1, 2], [3, 4]]) == [[4, -2], [-3, 1]]
+        assert Matrix.get_invert_matrix([[1, 2], [3, 4]]) == [[-2, 1], [1.5, -0.5]]
