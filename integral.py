@@ -17,4 +17,3 @@ class Integral:
             result += 4 * Integral.f(expr, a + h * 2 * i - h)
         result *= h / 3
         return round(result, 5)
-
